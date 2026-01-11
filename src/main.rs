@@ -3,6 +3,7 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 
 fn solve_day1() {
     println!("day1::");
@@ -89,10 +90,21 @@ fn solve_day5() {
     }
 }
 
+fn solve_day6() {
+    print!("day6::");
+    println!("Q1 => ");
+    let res = day6::solve_q1("input.txt");
+    match res {
+        Ok(result) => println!("solution = {:?}", result),
+        Err(_) => eprintln!("error in solving!")
+    };
+}
+
 fn main() {
     // solve_day1();
     // solve_day2();
     // solve_day3
     // solve_day4();
-    solve_day5();
+    // solve_day5();
+    solve_day6();
 }
